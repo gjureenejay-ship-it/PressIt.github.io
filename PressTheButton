@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Sound Instant Webpage</title>
+    <style>
+        /* CSS for the background gradient and layout */
+        body {
+            /* Full viewport height and width */
+            min-height: 100vh;
+            width: 100%;
+            margin: 0;
+            
+            /* Use Flexbox to center the content */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            
+            /* Bluish Gradient Background */
+            background: linear-gradient(135deg, #e0f7fa 0%, #81d4fa 50%, #0288d1 100%);
+            background-color: #81d4fa; 
+            
+            /* Basic text styling */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a237e;
+        }
+
+        .container {
+            /* Styling for the content box */
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center; /* This ensures the elements *inside* the container are centered */
+            max-width: 90%;
+            width: 350px;
+        }
+
+        h1 {
+            color: #0d47a1;
+            margin-bottom: 25px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        /* Styling for the iframe container - ensures the iframe element is treated as centered content */
+        .sound-button-wrapper {
+            display: flex; /* Using flex to help center the iframe itself */
+            justify-content: center; /* Centers the iframe horizontally within the wrapper */
+            margin: 15px 0;
+            border: 2px solid #0d47a1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔊 Press the Button</h1>
+        
+        <p>It's a Red button press it.</p>
+
+        <div class="sound-button-wrapper">
+            <iframe width="110" height="200" src="https://www.myinstants.com/instant/we-are-charlie-kirk-6093/embed/" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <p>Enjoy the sound!</p>
+    </div>
+
+</body>
+</html>
